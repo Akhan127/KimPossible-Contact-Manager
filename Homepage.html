@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	
+body
+{
+background:url(images/kim4.jpg) top center no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+
+ color:  #1e1f1e;
+       /* background: #F5F7FA;*/
+		font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 300px;
+}
+
+.table-wrapper {
+		width: 900px;
+		margin: 30px auto;
+        background: #fff;
+        padding: 20px;	
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table-title {
+        padding-bottom: 10px;
+        margin: 0 0 10px;
+    }
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+    .table-title .add-new {
+        float: right;
+		height: 30px;
+		font-weight: bold;
+		font-size: 12px;
+		text-shadow: none;
+		min-width: 100px;
+		border-radius: 50px;
+		line-height: 13px;
+    }
+	.table-title .add-new i {
+		margin-right: 4px;
+	}
+    table.table {
+        table-layout: fixed;
+        margin-right: 0px;
+    }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    table.table th:last-child {
+        width: 100px;
+    }
+    table.table td a {
+		cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+		min-width: 24px;
+    }    
+	table.table td a.add {
+        color: #27C46B;
+    }
+    table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #E34724;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+	table.table td a.add i {
+        font-size: 24px;
+    	margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }    
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+	table.table .form-control.error {
+		border-color: #f50000;
+	}
+	table.table td .add {
+		display: none;
+	}
+
+	.main-nav{
+
+	float: center;
+	margin-left: 500px;
+	list-style: none;
+	/*margin-top: 30px;*/
+	
+}
+
+.main-nav li{
+
+	display: inline-block;
+	float : center;
+	margin-top: 100px;
+
+}
+
+	.main-nav li a
+{
+
+	color:black;
+	text-decoration: none;
+	padding:5px 20px;
+	font-family: "Roboto","sans-serif";
+	font-size:30px;
+}
+
+.main-nav li.active a{
+
+	border: 1px solid white;
+}
+
+.main-nav li a:hover{
+
+	border: 2px solid white;
+}
+
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+  float: center;
+  margin-left: 500px;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #0fd117;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b740f;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+.table table-bordered{
+
+background-color: black;
+	
+}
+
+.table-wrapper{
+border: 10px ridge #63A40C;
+border-radius: 40px 40px 40px 40px;
+
+
+
+}
+.button1{
+
+	margin-left: 150px;
+	padding: 20px;
+	border: 1px outset #1EA41D;
+border-radius: 40px 40px 40px 40px;
+background-color: #ffffff;
+}
+
+.button1:hover{
+
+	
+background-color: #ccffff;
+}
+
+.button11{
+
+	
+margin-left: 150px;
+	padding: 20px;
+	border: 1px outset #1EA41D;
+border-radius: 40px 40px 40px 40px;
+background-color: #ffffff;
+}
+
+.button2{
+
+
+padding: 20px;
+	border: 1px outset #1EA41D;
+border-radius: 40px 40px 40px 40px;
+background-color: #ffffff;
+
+}
+
+</style>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	var actions = $("table td:last-child").html();
+	// Append table with add row form on add new button click
+    $(".add-new").click(function(){
+		$(this).attr("disabled", "disabled");
+		var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control" name="First_name" id="First_NameText"></td>' +
+            '<td><input type="text" class="form-control" name="Last_name" id="Last_NameText"></td>' +
+            '<td><input type="text" class="form-control" name="phone" id="PhoneText"></td>'    +
+             '<td><input type="text" class="form-control" name="Email" id="EmailText"></td>'   + '<td><input type="text" class="form-control" name="Address" id="AddressText"></td>' +
+			'<td>' + actions + '</td>' +
+        '</tr>';
+    	$("table").append(row);		
+		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+	// Add row on add button click
+	$(document).on("click", ".add", function(){
+		var empty = false;
+		var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+			if(!$(this).val()){
+				$(this).addClass("error");
+				empty = true;
+			} else{
+                $(this).removeClass("error");
+            }
+		});
+		$(this).parents("tr").find(".error").first().focus();
+		if(!empty){
+			input.each(function(){
+				$(this).parent("td").html($(this).val());
+			});			
+			$(this).parents("tr").find(".add, .edit").toggle();
+			$(".add-new").removeAttr("disabled");
+		}		
+    });
+	// Edit row on edit button click
+	$(document).on("click", ".edit", function(){		
+        $(this).parents("tr").find("td:not(:last-child)").each(function(){
+			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+		});		
+		$(this).parents("tr").find(".add, .edit").toggle();
+		$(".add-new").attr("disabled", "disabled");
+    });
+	// Delete row on delete button click
+	$(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+		$(".add-new").removeAttr("disabled");
+    });
+});
+</script>
+<head>
+	<title>Welcome Home</title>
+	<title></title>
+</head>
+
+<ul class="main-nav">
+				<li><a href="Homepage.html"><strong>Welcome to your Contact Manager</strong></a></li>
+				
+				<button class="button1" type="button">Logout</button>
+			
+			</ul>
+
+
+<br>
+		<br>
+			<br>
+			<!-- The form -->
+<form class="example" action="action_page.php">
+  <input class="button11" type="text" placeholder="Search.." name="search">
+  <button class="button2" type="submit"><i class="fa fa-search"></i></button>
+</form>
+				<br>
+	<div class="">
+<div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Personal <b>Contacts</b></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Example</td>
+                        <td>Name</td>
+                        <td>(123) 456-7890</td>
+                        <td>Example@site.com</td>
+                        <td>123 S Main St</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div> 
+
+</div>
+
+
+<body>
+
+</body>
+</html>
