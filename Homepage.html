@@ -239,6 +239,7 @@ background-color: #ffffff;
 
 </style>
 <script type="text/javascript">
+	var webRoot = "http://callmebeepus.world";
 
 $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip();
@@ -293,6 +294,16 @@ $(document).ready(function(){
 		$(".add-new").removeAttr("disabled");
     });
 });
+
+
+// Signs out user by deleting resetting local user information and redirects to login page.
+function signOut()
+{
+    username = '';
+    userId = 0;
+    window.name = '';
+    window.location.href = webRoot + '/index.html';
+}
 </script>
 <head>
 	<title>Welcome Home</title>
@@ -302,7 +313,7 @@ $(document).ready(function(){
 <ul class="main-nav">
 				<li><a href="Homepage.html"><strong>Welcome to your Contact Manager</strong></a></li>
 				
-				<button class="button1" type="button">Logout</button>
+				<button class="button1" type="button" onclick="signOut()">Logout</button>
 			
 			</ul>
 
