@@ -68,6 +68,19 @@ function register()
 	
 }
 
+
+
+//Log out by Jordan Germinal
+// Signs out user by deleting resetting local user information and redirects to login page.
+function signOut()
+{
+    username = '';
+    userId = 0;
+    window.name = '';
+    window.location.href = urlBase + '/index.html';
+}
+
+
 // DONE
 function doLogout()
 {
