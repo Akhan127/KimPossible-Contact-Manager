@@ -35,15 +35,24 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
 					<span class="login100-form-title">
-						Login to KimPoss Contacts
+						Register to KimPoss Contacts
 					</span>
 					<div class="alert alert-danger alert-dismissable" id="genericErrorLoginAlert" role="alert" style="display: none;">
 						Connection error: Unable to login.
+
+						
 						<button type="button" class="close" data-hide="alert">
 			    			<span aria-hidden="true">&times;</span>
 			  		</button>
+
 					</div>
 					<div class="alert alert-danger alert-dismissable" id="success1" role="alert" style="display: none;">
+									  Please enter a valid username and password.
+									  <button type="button" class="close" data-hide="alert">
+						      			<span aria-hidden="true">&times;</span>
+						    		</button>
+								  </div>
+					<div class="alert alert-danger alert-dismissable" id="invalidLoginAlert" role="alert" style="display: none;">
 						Username/password combination is incorrect.
 						<button type="button" class="close" data-hide="alert">
 			    			<span aria-hidden="true">&times;</span>
@@ -58,38 +67,31 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-						<input id="username" class="input100" type="text" name="username" placeholder="Username">
+						<input id="username1" class="input100" type="text" name="username" placeholder="Username">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
-						<input id="password" class="input100" type="password" name="pass" placeholder="Password">
+						<input id="password1" class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="text-right p-t-13 p-b-23">
-						<span class="txt1">
-							Forgot
-						</span>
-
-						<a href="#" class="txt2">
-							Username / Password?
-						</a>
-					</div>
+					<br>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="doLogin();">
-							Sign in
+						<a href="/index.html"><button class="login100-form-btn" onclick="register()">
+							Sign up!
 						</button>
+					</a>
 					</div>
 
 					<div class="flex-col-c p-t-50 p-b-40">
 						<span class="txt1 p-b-9">
-							Don’t have an account?
+							Have an account?
 						</span>
 
-						<a href="http://callmebeepus.world/signup.html" class="txt3" data-target="#registerNewUser">
-							Sign up now
+						<a href="http://callmebeepus.world/index.html" class="txt3" data-target="#registerNewUser">
+							Log in now
 						</a>
 					</div>
 
